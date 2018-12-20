@@ -14,8 +14,6 @@ function distanceTravelledInFeet(startValue, endValue) {
   let distanceFeet = (endValue - startValue) * 264
   return Math.abs(distanceFeet);
 }
-let start = x
-let destination = y
 function calculatesFarePrice (start, destination) {
   let actualDistance = (destination - start) * 264
   let distanceTraveled = (((Math.abs(destination - start)) * 264) - 400)
