@@ -14,8 +14,9 @@ function distanceTravelledInFeet(startValue, endValue) {
   let distanceFeet = (endValue - startValue) * 264
   return Math.abs(distanceFeet);
 }
+
 function calculatesFarePrice (start, destination) {
-  let actualDistance = (destination - start) * 264
+  let actualDistance = (Math.abs(destination - start)) * 264
   let distanceTraveled = (((Math.abs(destination - start)) * 264) - 400)
   let farePrice = (((Math.abs(destination - start)) * 264) - 400)* 0.02
   if (actualDistance >=2500) {return "cannot travel that far"}
