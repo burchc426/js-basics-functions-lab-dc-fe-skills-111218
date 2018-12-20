@@ -22,7 +22,7 @@ function calculatesFarePrice (start, destination) {
   let farePrice = (((destination - start) * 264) - 400)* 0.02
   if (actualDistance >= 2500) {return "cannot travel that far"}
   if (actualDistance >=2000) {return 25}
-  if (distanceTraveled <=400) {return 0}
+  if (actualDistance <=400) {return 0}
   if (distanceTraveled<=2000) {return farePrice}
 }
 
