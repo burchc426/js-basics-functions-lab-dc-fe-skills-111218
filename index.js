@@ -23,7 +23,7 @@ function calculatesFarePrice (start, destination) {
   if (actualDistance >=2500) {return "cannot travel that far"}
   if (actualDistance >=2000) {return 25}
   if (actualDistance <=400) {return 0}
-  if (actualDistance<=2000) {return farePrice}
+  if (actualDistance <=2000) {return farePrice}
 }
 
 //<= 400 is free, 400 - 2000 2 cents per foot, >2500 is 25 dollars
